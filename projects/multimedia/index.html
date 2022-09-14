@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas Multimedia</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1 class="m-title">Multimedia</h1>
+            <br><br>
+            <div id="menu" onclick="changeIcon()">
+                <i class="material-icons">menu</i>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        function changeIcon() {
+            const icon = document.getElementById("menu");
+            console.log(icon.textContent);
+            if(icon.textContent.trim() == 'menu') {
+                icon.innerHTML = "<i class='material-icons'>close</i>";
+            } else {
+                icon.innerHTML = "<i class='material-icons'>menu</i>";
+            }
+        }
+    </script>
+</body>
+</html>

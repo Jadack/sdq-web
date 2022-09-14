@@ -10,7 +10,7 @@
 body {
     width: 100%;
     background-color: #8EC5FC;
-    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    background-image: linear-gradient(75deg, #8EC5FC 0%, #E0C3FC 100%);
 
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 .card {
-    width: 35%;
+    width: 30%;
     min-height: 200px;
     margin: auto;
     margin-top: 10%;
@@ -30,17 +30,61 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.card:hover {
+/* .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
+} */
 
 .btn {
-    width: auto;
-    height: 15px;
+    width: 100%;
+    min-height: 25px;
     padding: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
     color: #fff;
     border-radius: 5px;
     text-decoration: none;
+    border: 1px solid #74a3d3;
     background-color: #8EC5FC;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+    padding: 25px;
+}
+
+.avatar-img {
+    width: 50%;
+    height: auto;
+    border-radius: 100%;
+}
+
+.marco {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
+
+.contenido {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin: auto;
+}
+
+.m-title {
+    color: blue;
+}
+
+.menu {
+    content: "menu";
+    transition: ease-out 2s;
+}
+
+.menu:hover {
+    content: "close";
+    cursor: pointer;
 }
